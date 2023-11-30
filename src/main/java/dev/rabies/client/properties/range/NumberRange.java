@@ -1,5 +1,8 @@
 package dev.rabies.client.properties.range;
 
+import lombok.Data;
+
+@Data
 public class NumberRange<T extends Comparable<T>> {
     private T min, max;
 
@@ -14,13 +17,5 @@ public class NumberRange<T extends Comparable<T>> {
 
     public boolean contains(T value) {
         return value.compareTo(min) >= 0 && value.compareTo(max) <= 0;
-    }
-
-    public void setMin(T min) {
-        this.min = min;
-    }
-
-    public void setMax(T max) {
-        this.max = max;
     }
 }

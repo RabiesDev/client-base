@@ -5,13 +5,15 @@ import dev.rabies.client.properties.range.NumberRange;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.util.function.Supplier;
+
 @Getter
-public class RangeProperty<T extends Comparable<T>> extends Property<T> {
+public class RangeProperty<T extends Comparable<T>> extends Property<NumberRange<T>> {
     private final NumberRange<T> range;
 
     @Builder
-    public RangeProperty(String identifier, T defaultValue, NumberRange<T> range) {
-        super(identifier, defaultValue);
+    protected RangeProperty(String identifier, NumberRange<T> defaultValue, NumberRange<T> range, Supplier<Boolean> dependency) {
+        super(identifier, defaultValue, dependency);
         this.range = range;
     }
 }
