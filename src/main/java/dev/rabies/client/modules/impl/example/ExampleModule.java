@@ -9,7 +9,7 @@ import dev.rabies.client.modules.BranchModule;
 import dev.rabies.client.modules.DevelopingState;
 import dev.rabies.client.modules.GenericModule;
 import dev.rabies.client.modules.ModuleCategory;
-import dev.rabies.client.modules.impl.example.branch.ExampleBranch;
+import dev.rabies.client.modules.impl.example.branches.ExampleBranch;
 import dev.rabies.client.properties.binding.BindMode;
 import dev.rabies.client.properties.binding.KeyBinding;
 import dev.rabies.client.properties.choice.ArrayHelper;

@@ -1,4 +1,4 @@
-package dev.rabies.client.modules.impl.example.branch;
+package dev.rabies.client.modules.impl.example.branches;
 
 import dev.rabies.client.events.Priorities;
 import dev.rabies.client.events.Timings;
